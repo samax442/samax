@@ -1,0 +1,55 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif
+}
+/* Style pour la barre de navigation */
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    background-color: #b9e3f0e8;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar img {
+    height: 50px;   
+    width: 50px;
+}
+.navbar ul {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; width: 500;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar li {
+    display: inline-block;
+    margin-right: 15px;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+.navbar a:hover {
+    background-color: #4ed633;
+    border-radius: 50px;
+}
+.search-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #cff1ff;
+    border-radius: 10px;
+    margin-right: -3px; 
+}
+.search-container button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    color: rgb(77, 5, 5);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
