@@ -1,0 +1,60 @@
+ALGORITHME somme_elements_distincts
+    // Déclaration des ensembles
+    Ensemble1 <- [3, 1, 7, 9]
+    Ensemble2 <- [2, 4, 1, 9, 3]
+
+    // Initialisation de la somme
+    somme <- 0
+
+    // Parcourir chaque élément de l'Ensemble1
+    POUR CHAQUE element DANS Ensemble1 FAIRE
+        SI element N'EST PAS DANS Ensemble2 ALORS
+            // Ajouter l'élément distinct à la somme
+            somme <- somme + element
+        FIN SI
+    FIN POUR
+
+    // Parcourir chaque élément de l'Ensemble2
+    POUR CHAQUE element DANS Ensemble2 FAIRE
+        SI element N'EST PAS DANS Ensemble1 ALORS
+            // Ajouter l'élément distinct à la somme
+            somme <- somme + element
+        FIN SI
+    FIN POUR
+
+    // Afficher la somme des éléments distincts
+    AFFICHER somme
+FIN ALGORITHME
+
+// Appeler l'algorithme
+somme_elements_distincts()
+//PROCÉDURE dot_product(v1, v2, ps)
+    // Calculer le produit scalaire de v1 et v2 et le stocker dans ps
+    ps <- 0
+    POUR i DE 1 À TAILLE(v1) FAIRE
+        ps <- ps + (v1[i] * v2[i])
+    FIN POUR
+FIN PROCÉDURE
+
+ALGORITHME vecteurs_orthogonaux
+    // Déclaration des vecteurs
+    N <- 3 // Nombre de vecteurs
+    POUR k DE 1 À N FAIRE
+        // Lire les composantes des vecteurs v1 et v2
+        LIRE v1[k]
+        LIRE v2[k]
+
+        // Appeler la procédure dot_product pour calculer le produit scalaire
+        dot_product(v1[k], v2[k], produit_scalaire)
+
+        // Vérifier si les vecteurs sont orthogonaux
+        SI produit_scalaire = 0 ALORS
+            AFFICHER "Les vecteurs v1 et v2 sont orthogonaux."
+        SINON
+            AFFICHER "Les vecteurs v1 et v2 ne sont pas orthogonaux."
+        FIN SI
+    FIN POUR
+FIN ALGORITHME
+
+// Appeler l'algorithme
+vecteurs_orthogonaux()
